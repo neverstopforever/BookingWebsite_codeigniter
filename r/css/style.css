@@ -1,0 +1,2883 @@
+@font-face {
+    font-family: 'museo_cyrl500';
+    src: url('../fonts/museo-500.woff2') format('woff2'),
+         url('../fonts/museo-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+@font-face{
+  font-family: "Museo500";
+  src: url('fonts/museo-500.otf');
+}*/
+
+body {
+	background: url(../img/bg_1.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 13px;
+}
+
+.btn {
+	font-family: "museo_cyrl500";
+}
+
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+.green {color: #5e9d54;}
+.red {color: #c66161;}
+.btn-primary {
+	background: #95c6d9;
+	color: #fff;
+}
+.btn-secondary {
+	background: #b2b2b2;
+	color: #fff;
+}
+
+a {
+	color: #95c6d9;
+}
+
+a.add-new {
+	text-decoration: underline;
+}
+
+.login {
+	text-align: right;
+	margin-right: 35px;
+	padding-top: 10px;
+}
+.login li{
+	text-align: right;
+	display:inline-block;
+	float:none;
+	margin-top: 5px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+.login .username{
+	color: #95c6d9;
+}
+.login .logout a{
+	color: #737373;
+}
+
+.brand {
+	text-align: center;
+	margin: 30px 0 50px 0;
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: white;
+}
+.navbar-top {
+	margin: 0;
+}
+.mynavbar {
+	text-align:center;
+	background-color: #eaebec;
+}
+.mynavbar .nav {
+	float:none;
+}
+.mynavbar .nav li {
+	display:inline-block;
+	float:none;
+	margin:15px 30px;
+	vertical-align:middle;
+}
+.mynavbar .nav li a {
+	color:#424242;
+	font-size: 17px;
+	font-weight: normal;
+	padding: 10px 20px;
+}
+#staf .mynavbar .nav li {
+	margin:15px 20px;
+}
+#admin .mynavbar .nav li {
+	margin:15px 5px;
+}
+#admin .mynavbar .nav .settings {
+	padding: 10px 45px;
+}
+.mynavbar .nav li a:focus,
+.mynavbar .nav li a:hover {
+	background-color: #95c6d9;
+	color: #fff;
+	border-radius: 5px;
+}
+.navbar-header .icon-bar {
+	background-color: #424242;
+}
+.mynavbar .dropdown .dropdown-menu {
+	display: absolute;
+	border-radius: 5px;
+	background-color: #f6f6f6;
+	padding: 0;
+	border: 0;
+	margin-top: 5px;
+	width: 100%;
+	min-width: 10px;
+}
+.mynavbar .dropdown-menu li {
+	display: block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 0;
+}
+.mynavbar .dropdown-menu li a {
+	font-weight: 300;
+	font-size: 12px;
+	padding: 0;
+}
+.mynavbar .dropdown-menu li a:focus,
+.mynavbar .dropdown-menu li a:hover {
+	color: #95c6d9;
+	background-color: transparent;
+}
+.content {
+	background-color: #fff;
+	height: auto;
+	margin: -5px 35px;
+}
+.navbar-bottom {
+	padding: 10px 35px;
+	background-color: #272727;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-bottom  li,
+.navbar-bottom  li a:hover,
+.navbar-bottom  li a:focus,
+.navbar-bottom  li a{
+	padding: 0;
+	color: #eaebec;
+	font-size: 12px;
+	font-weight: 300;
+	background-color: transparent;
+}
+.navbar-bottom .pull-right{
+	text-align: right;
+}
+
+@media screen and (max-width:768px) {
+.navbar-brand {
+	display:inline;
+	margin-bottom: 10px;
+}
+.navbar {
+	background-color: #eaebec;
+}
+.mynavbar {
+	border: 0;
+	background-color: #eaebec;
+}
+.mynavbar .nav {
+	border-bottom: 0;
+}
+.mynavbar .nav li {
+	display:block;
+	margin:0
+}
+.mynavbar .nav li a {
+	border-radius:0;
+	display:block;
+}
+}
+
+/* === DATE === */
+.form_date.input-group {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.form_date.input-group .form-control {
+	position: static;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+/* 
+========== PAGE 4 ==========
+*/
+.content .success-message {
+	background-color: #daedd7;
+	min-height: 55px;
+	margin-top: 20px;
+	padding: 15px 0px;
+	color: #5e9d54;
+	text-align: center;
+}
+.content .success-message text{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-left: 15px;
+}
+.content .success-message a {
+	position: absolute;
+	right: 60px;
+}
+.content .error-message {
+	background-color: #ee5e5e;
+	min-height: 55px;
+	margin-top: 20px;
+	padding: 15px 0px;
+	color: #5e9d54;
+	text-align: center;
+}
+.content .error-message text{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-left: 15px;
+}
+.content .error-message a {
+	position: absolute;
+	right: 60px;
+}
+
+
+
+.content .guestlist {
+	margin-top: 20px;
+	margin-left: 50px;
+	font-size: 18px;
+}
+
+.content .table-elements {
+	margin-top: 20px;
+	margin-left: 60px;
+}
+.content .table-elements .add-new-guest {
+	padding: 15px 25px;
+	background-color: #95c6d9;
+	color: #fff;
+	font-family: 'museo_cyrl500';
+	font-size: 14px;
+}
+.content .table-elements .add-new-guest.export {
+	padding: 5px 10px;
+}
+.content .table-elements .pagination {
+	margin: 0 0px -10px 0px;
+	font-size: 14px;
+}
+.content .table-elements .pagination li {
+	font-size: 11px;
+	font-weight: bold;
+}
+.content .table-elements .pagination li a {
+	border: 0;
+	color: #6e6e6e;
+	background: transparent;
+}
+.content .table-elements .pagination li a:hover {
+	background-color: rgba(235,235,235,0.5);
+	border-radius: 100%;
+}
+.content .table-elements .pagination .active a {
+	color: #95c6d9;
+	background: transparent;
+}
+.content .table-elements .pagination .next,
+.content .table-elements .pagination .previous {
+	color: #b7b7b7;
+}
+
+.content .search-query {
+	width: 203px;
+}
+
+.content .table-responsive {
+	margin: 15px 60px 0 60px;
+}
+.content .table-responsive.booking-details {
+	margin: 15px 60px 0 -15px;
+}
+.content .table-responsive span a{
+	color: #bababa;
+}
+.content .table-responsive .col1,
+.content .table-responsive .col2,
+.content .table-responsive .col3,
+.content .table-responsive .col4,
+.content .table-responsive .col5,
+.content .table-responsive .col6{
+	border: 1px solid #dfe0e0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.content .table-responsive .col1.tleft,
+.content .table-responsive .col2.tleft,
+.content .table-responsive .col3.tleft,
+.content .table-responsive .col4.tleft,
+.content .table-responsive .col5.tleft,
+.content .table-responsive .col6.tleft,
+.content-edit .table-responsive .col1.tleft,
+.content-edit .table-responsive .col2.tleft,
+.content-edit .table-responsive .col3.tleft,
+.content-edit .table-responsive .col4.tleft,
+.content-edit .table-responsive .col5.tleft,
+.content-edit .table-responsive .col6.tleft{
+	text-align: left;
+}
+.content .table-responsive .col2, 
+.content .table-responsive .col5{
+	text-align: center;
+}
+.content .table-responsive .col6{
+	/*border: 0;
+	background-color: #fff;*/
+}
+.content .table-responsive .col7,
+.content .table-responsive .nobg{
+	background-color: #fff;
+	border-bottom: 0;
+	border-top: 0;
+	text-align: left;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+	background-color: #f6f6f6;
+}
+
+.content table .col7 {
+	text-align: center;
+}
+.content .table-responsive thead tr th {
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	color: #bababa;
+	text-align: center;
+	letter-spacing: 1px;
+	/*padding: 10px 20px;*/
+}
+.content .table-responsive tbody tr td {
+	color: #727272;
+	padding: 5px 30px;
+}
+.content table tbody td img {
+	margin: 0 8px;
+}
+.content table tbody td img {
+	filter: opacity(0.3);
+	-webkit-filter: opacity(0.3);
+	-moz-filter: opacity(0.3);
+	-o-filter: opacity(0.3);
+	-ms-filter: opacity(0.3);
+}
+.content table tbody td img:hover {
+	filter: opacity(1);
+	-webkit-filter: opacity(1);
+	-moz-filter: opacity(1);
+	-o-filter: opacity(1);
+	-ms-filter: opacity(1);
+}
+.content .form-control {
+	width: auto;
+	border: 0;
+	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, .075);
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, .075);
+}
+.content .input-group-btn .btn-search {
+	background-color: transparent;
+	color: #c7c7c7;
+}
+.content .add-on {
+	border: 1px solid #b7b7b7;
+	border-radius: 5px;
+	margin-left: 50px;
+}
+.content .select-label {
+	margin-left: 27px;
+	color: #6e6e6e;
+}
+
+.selectDiv {
+   width: 75px;
+   height: 32px;
+   line-height:36px;
+   overflow: hidden;
+   background: url('../img/dropdown.png') no-repeat right;
+   border: #ccc 1px solid;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    margin:0px;
+    padding:0px;
+    position: relative;
+    z-index:100;
+}
+.selectDiv:hover {
+	background: url('../img/dropdown-hover.png') no-repeat right;
+}
+.selectDefault1,
+.selectDefault2,
+.selectDefault {
+    padding-left:15px;
+}
+.selectDiv select {
+	margin:0px;
+	padding:0px;
+	opacity:0;
+    filter:alpha(opacity=0);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index:101;
+}
+.selectDiv select:focus {
+    outline: none;
+}
+
+#tocModal .modal-dialog {
+	margin-top: 10%;
+	background: white;
+	border: 1px solid #95c6d9;
+	padding: 20px 40px;
+	font-family: 'museo_cyrl500';
+}
+
+#tocModal .modal-content {
+	box-shadow: none;
+	border: none;
+}
+
+#tocModal .modal-header {
+	border-bottom: 0;
+	padding: 0;
+}
+
+#tocModal .modal-header button {
+	font-size: 30px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-shadow: none;
+	padding: 5px 10px;
+	z-index: 999;
+	font-weight: normal;
+}
+
+#tocModal .modal-header button:hover {
+	/*background: #daedd8;*/
+	background: #95c6d9;
+	color: #fff;
+}
+
+.selectDefault, .selectDiv option {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+	color: #6e6e6e;
+}
+.modal.fade.ViewGuest {
+	border: 1px solid #99b9c6;
+}
+.ViewGuest .close {
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	left: auto;
+}
+.ViewGuest .modal-head {
+	text-align: center;
+	margin-top: 35px;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 18px;
+}
+.ViewGuest .modal-head b{	
+	color: #424242;
+}
+.ViewGuest .form-control {
+	height: 38px;
+}
+.ViewGuest .modal-body {
+	padding: 40px 100px 0 50px;
+	color: #6e6e6e;
+}
+.ViewGuest .form-horizontal .form-group label{
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+}
+.ViewGuest .modal-footer {
+	border: 0;
+}
+.ViewGuest .modal-footer .btn-default {
+	background-color: #d99595;
+	font-size: 14px;
+	padding: 15px 45px;
+	color: #fff;
+}
+.btn.btn-default {
+	background: #d99595;
+}
+.ViewGuest .input-group-addon {
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 2px;
+	right: 50px;
+	position: absolute;
+	top: 0;
+}
+
+/* 
+========== PAGE 5 ==========
+*/
+.content-edit {
+	background-color: #fff;
+	height: auto;
+	margin: -5px 35px;
+	padding: 35px;
+}
+.content-edit .back-guest-list img{
+	margin-right: 10px;
+}
+.content-edit .back-guest-list a:hover,
+.content-edit .back-guest-list a {
+	color: #424242;
+	font-size: 15px;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+.content-edit .form-horizontal {
+	margin-top: 30px;
+	font-size: 14px;
+	color: #999;
+}
+.content-edit .form-horizontal label {
+	text-align: left;
+	font-weight: normal;
+	padding-left: 0;
+	margin-top: 5px;
+}
+.content-edit .form-horizontal .col-md-6 div {
+	margin: 5px 0;
+}
+.content-edit .form-horizontal .form-control {
+	height: 38px;
+}
+.content-edit .selectDiv {
+	height: 38px;
+	width: 100%;
+	overflow:scroll;
+}
+.content-edit .selectDiv option {
+	padding: 5px 10px;
+}
+.content-edit .form-horizontal .input-group-addon {
+	border: 0;
+	border-radius: 3px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	line-height: 32px;
+	vertical-align: middle;
+	background-color: #b7b7b7;
+	padding: 0px;
+	right: 16px;
+	position: absolute;
+	top: 0px;
+}
+.content-edit .form-horizontal .input-group-addon:hover {
+	background-color: #95c6d9;
+}
+.content-edit .form-horizontal table {
+	border: 1px solid #dfe0e0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.content-edit .form-horizontal thead tr th {
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #bababa;
+	border: 1px solid #dfe0e0;
+}
+.content-edit .form-horizontal tbody tr td {
+	border: 1px solid #dfe0e0;
+	color: #727272;
+	text-align: center;
+}
+.content-edit .form-horizontal tbody tr td a {
+	margin: 0 5px;
+}
+.content-edit .form-horizontal tbody .col5,
+.content-edit .form-horizontal tbody .col3,
+.content-edit .form-horizontal tbody .col4 {
+	text-align: center;
+}
+
+.content-edit .form-horizontal .table-responsive,
+.content-edit .form-horizontal .col-sm-offset-1 {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.content-edit .form-horizontal .btn-default {
+	padding: 10px 30px;
+	color: #fff;
+	background-color: #95c6d9;
+	margin-top: 30px;
+	border: none;
+}
+/* 
+========== PAGE 29 ==========
+*/
+.content-login .form-horizontal {
+	background-color: rgba(255,255,255,0.8);
+	margin-top: 40px;
+	margin-bottom: 245px;
+	width: 365px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 40px 35px 75px 35px;
+}
+.content-login .form-horizontal .form-control{
+	text-align: center;
+	font-size: 18px;
+	padding: 10px 0;
+	height: auto;
+	color: #999;
+}
+.content-login .form-horizontal .forgot-password{
+	padding-bottom: 20px;
+}
+.content-login .form-horizontal .form-group {
+	margin-bottom: 20px;
+}
+.content-login .form-horizontal .forgot-password a{
+	color: #6e6e6e;
+	opacity: 0.5;
+	font-size: 14px;
+}
+.content-login .form-horizontal .forgot-password a:hover{
+	opacity: 1;
+}
+
+.content-login .form-horizontal .btn-default {
+	background-color: #95c6d9;
+	color: #fff;
+	width: 100%;
+	font-family: 'museo_cyrl500';
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+/* 
+========== PAGE 8 ==========
+*/
+.btn-book {
+	padding: 10px 10px;
+	color: #fff;
+	text-align: center;
+	border: 2px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: block;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	-webkit-box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+.btn-book:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-bbq {
+	background: #c4df9b;
+}
+
+.btn-pool {
+	background: #95c6d9;
+	padding: 30px 10px;
+}
+
+.btn-gate, .btn-functionroom {
+	background: #c2c2c2;
+}
+
+.btn-tennis, .btn-basketball {
+	background: #a3d39c;
+	padding: 60px 10px;
+}
+
+
+/*
+========== PAGE 17 ==========
+*/
+.content .form-edit {
+	background :#f1f2f2;
+	padding: 10px 15px;
+}
+.content.twocols .guestlist {
+	margin-left: 0;
+}
+.content.twocols .table-elements {
+	margin-left: 0;
+}
+.content.twocols .table-responsive {
+	margin-left: 0;
+	margin-right: 20px;
+}
+.content.twocols .form-control {
+	width: 100%;
+}
+.content .form-edit.back-guest-list img{
+  margin-right: 10px;
+}
+.content .form-edit.back-guest-list a:hover,
+.content .form-edit.back-guest-list a {
+  color: #424242;
+  font-size: 15px;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+.content .form-edit.form-horizontal {
+  margin-top: 30px;
+}
+.content .form-edit.form-horizontal label {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 0;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+.content .form-edit.form-horizontal .col-md-6 div {
+  margin: 5px 0;
+}
+.content .form-edit.form-horizontal .form-control {
+  height: 38px;
+  border: 1px solid #aaa;
+}
+.content .form-edit.form-horizontal .input-group-addon {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 2px;
+  right: 50px;
+  position: absolute;
+  top: 0;
+}
+.content .form-edit.form-horizontal table {
+  border: 1px solid #dfe0e0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.content .form-edit.form-horizontal thead tr th {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #bababa;
+  border: 1px solid #dfe0e0;
+}
+.content .form-edit.form-horizontal tbody tr td {
+  border: 1px solid #dfe0e0;
+  color: #727272;
+}
+.content .form-edit.form-horizontal tbody tr td a {
+  margin: 0 5px;
+}
+.content .form-edit.form-horizontal tbody .col5,
+.content .form-edit.form-horizontal tbody .col3,
+.content .form-edit.form-horizontal tbody .col4 {
+  text-align: center;
+}
+
+.content .form-edit.form-horizontal .table-responsive,
+.content .form-edit.form-horizontal .col-sm-offset-1 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.content .form-edit.form-horizontal .btn-default {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #95c6d9;
+  margin-top: 30px;
+}
+
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+	border: 1px solid #dfe0e0;
+}
+
+/*
+========== PAGE 11 ==========
+*/
+.page11 .date.form_date {
+	border: 1px solid #b7b7b7;
+	border-radius: 5px;
+}
+.page11 .input-group-addon {
+	border: 0;
+	border-radius: 3px;
+	width: 34px;
+	height: 34px;
+	cursor: pointer;
+	line-height: 32px;
+	vertical-align: middle;
+	background-color: #b7b7b7;
+	padding: 0px;
+	right: 0px;
+	position: absolute;
+	top: 0px;
+}
+.page11 .input-group-addon:hover {
+	background-color: #95c6d9;
+}
+.page11 .terms a {
+	color: inherit;
+	text-decoration: underline;
+}
+.page11 .date-pick {
+	margin-top: 10px;
+	padding-bottom: 15px;
+}
+.page11 .date-pick button{
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.page11 .btn-date-default {
+	font-family: 'Oxygen', sans-serif;
+} 
+
+.page11.content .form-edit.form-horizontal {
+	margin-top: 70px;
+}
+
+p.terms {
+	color: #999;
+}
+
+
+/*
+========== CONTACTS PAGE ==========
+*/
+.contact-header {
+	margin: 20px 0 40px;
+	padding: 0 50px;
+}
+
+.contact-header > span {
+	display: inline-block;
+	margin-right: 50px;
+	font-size: 18px;
+}
+
+.contact-header .edit-contact,
+.edit-save { /* button style */
+	padding: 10px 40px;
+	background-color: #95c6d9;
+	color: #fff;
+	font-family: 'museo_cyrl500';
+	font-size: 14px;
+}
+
+.contact-detail {
+	margin-bottom: 50px;
+	padding: 0 50px;
+	color: #727272;
+}
+
+.contact-detail > p {
+	margin-left: 20px;
+}
+
+.contact-editor {
+	margin-bottom: 50px;
+	padding: 0 50px;
+}
+
+.text-editor {
+	width: 800px;
+	max-width: 100%;
+	margin-top: -20px;
+}
+
+.form-footer {
+	margin-top: 20px;
+}
+
+.edit-save {
+	margin-right: 50px;
+}
+
+.edit-save:hover {
+	color: #fff;
+}
+
+.edit-cancel {
+	text-decoration: underline;
+}
+
+.edit-cancel,
+.edit-cancel:hover {
+	color: #727272;
+}
+
+/* ckeditor style overrides */
+.cke {
+	border-radius: 4px !important;
+	box-shadow: none !important;
+	overflow: hidden !important;
+}
+
+.cke_top,
+.cke_bottom {
+	background: #f5f5f5 !important;
+	box-shadow: none !important;
+}
+
+.cke_bottom {
+	display: none !important;
+}
+
+.cke_button,
+.cke_combo_button {
+	background: #fff !important;
+}
+
+.cke_button:hover,
+.cke_combo_button:hover {
+	cursor: pointer !important;
+}
+
+a.cke_button_off:hover, 
+a.cke_button_off:focus, 
+a.cke_button_off:active, 
+a.cke_button_disabled:hover, 
+a.cke_button_disabled:focus, 
+a.cke_button_disabled:active,
+.cke_combo_button:hover,
+.cke_combo_button:focus,
+.cke_combo_button:active {
+	box-shadow: 0 0 1px rgba(0,0,0,.3) inset;
+	background: #ccc !important;
+}
+
+a.cke_button_on {
+  box-shadow: 0 1px 5px rgba(0,0,0,.6) inset,0 1px 0 rgba(0,0,0,.2);
+  background: #b5b5b5 !important;
+}
+
+/* fix navbar settings menu dropdown wrapping */
+@media all and (min-width: 992px) {
+	.settings-menu {
+		width: 180px;
+	}
+}
+
+
+/*
+========== APP FORM PAGE ==========
+*/
+.app-form {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.upload-new-form,
+.delete-form-popup a.btn { /* upload button */
+	padding: 15px 25px;
+	background-color: #95c6d9;
+	color: #fff;
+	font-family: 'museo_cyrl500';
+	font-size: 14px;
+}
+
+.upload-new-form:hover {
+	color: #fff;
+}
+
+.app-form .app-form-table .col1,
+.app-form .app-form-table .col3 {
+	width: 200px;
+}
+
+.app-form .app-form-table .col2 {
+	width: 400px;
+}
+
+.app-form .app-form-table .col7 > a.zoom-row,
+.app-form .app-form-table .col7 > a.delete-row {
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	margin: 0 6px;
+	background: url(../img/icon-magni-off.png) center center no-repeat;
+}
+	
+.app-form .app-form-table .col7 > a.delete-row {
+	background: url(../img/icon-delete-off.png) center center no-repeat;
+}
+
+.app-form .app-form-table .col7 > a.zoom-row:hover {
+	background-image: url(../img/icon-magni.png);
+}
+
+.app-form .app-form-table .col7 > a.delete-row:hover {
+	background-image: url(../img/icon-delete-on.png);
+}
+
+.app-form .app-form-table th,
+.app-form .app-form-table td {
+	position: relative;
+	padding-left: 30px !important;
+	padding-right: 50px !important;
+	text-align: left !important;
+}
+
+.app-form .app-form-table .sort-icon {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	display: inline-block;
+	width: 13px;
+	height: 20px;
+	margin-top: -10px;
+}
+
+.app-form .app-form-table .sort-icon a {
+	position: absolute;
+	bottom: 6px;
+	font-size: 12px;
+}
+
+.app-form .app-form-table .sort-icon a.sort-down {
+	top: 6px;
+	bottom: auto;
+}
+
+.app-form .app-form-table .sort-icon > a:hover > i {
+	color: #95c6d9;
+}
+
+.delete-form-popup {
+	display: none;
+	position: relative;
+	width: 100%;
+	max-width: 580px;
+	background: #fff;
+	margin-top: -98px;
+	border: 1px solid #95c6d9;
+	padding: 98px 20px;
+	text-align: center;
+	box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.delete-form-popup .popup-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.delete-form-popup .popup-message {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+.delete-form-popup a.btn {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 0 5px;
+}
+
+.delete-form-popup a.btn.popup-action-yes {
+	background: #d99595;
+}
+
+.blur-bg {
+	background: url(../img/bg_1.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#blurbox-wrapper {
+	overflow: visible !important;
+	padding: 0 !important;
+	border-radius: 0 !important;
+}
+
+@media all and (max-width: 767px) { /* mobile screen fixes */
+	.app-form {
+		padding: 0 50px;
+	}
+	
+	.app-form .table-elements-header {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	
+	.app-form .table-elements-header .upload-new-form {
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+	.app-form .table-elements-header .input-group.add-on {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	
+	.app-form .table-elements-header .input-group .form-control {
+		width: 100%;
+	}
+	
+	.app-form .table-elements-header .itemsperpage-select-box {
+		top: auto;
+		left: auto;
+		text-align: center;
+	}
+	
+	.app-form .table-responsive {
+		margin: 0;
+	}
+	
+	.app-form .table-elements-footer {
+		margin: 20px 0 0 !important;
+	}
+
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) { /* tablet screen fixes */
+	.app-form {
+		padding: 0 50px;
+	}
+	
+	.app-form .table-elements-header {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	
+	.app-form .table-elements-header .input-group.add-on {
+		margin-left: 25px;
+	}
+	
+	.app-form .table-elements-header .itemsperpage-select-box {
+		left: 25px;
+	}
+	
+	.app-form .table-responsive {
+		margin: 0;
+	}
+	
+	.app-form .table-elements-footer {
+		margin: 20px 0 0 !important;
+	}
+}
+
+
+
+/*
+========== FORM UPLOAD EDIT PAGE ==========
+*/
+.form-upload {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding: 0 50px;
+	color: #6e6e6e;
+}
+
+/*-------------------------------------- back to app link*/
+.back-to-app-form {
+	position: relative;
+	display: inline-block;
+	height: 26px;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	font-size: 15px;
+	color: #6e6e6e;
+	line-height: 26px;
+}
+
+.back-to-app-form:before { /* icon back to GL */
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	margin-top: -8.5px;
+	background: url(../img/icon-back-to-GL.png);
+}
+
+.back-to-app-form:hover {
+	color: #424242;
+	text-decoration: none;
+}
+
+/*-------------------------------------- form groups global*/
+.form-upload .form-group {
+	height: 40px;
+	margin: 0;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+
+@media all and (max-width: 767px) { /* mobile screen fix */
+	.form-upload .form-group {
+		height: auto;
+	}
+}
+
+.form-upload .form-group > * {
+	float: left;
+}
+
+.form-upload .form-group .control-label {
+	width: 150px;
+	padding: 0;
+	text-align: left;
+	font-weight: normal;
+}
+
+.form-upload .form-group .form-control {
+	height: 40px;
+	border: 1px solid #ccc;
+}
+
+.form-upload .message-error {
+	color: #c66161;
+}
+
+/*-------------------------------------- current file section*/
+.form-upload .current-file .the-current-file {
+	margin-right: 10px;
+}
+
+.form-upload .current-file .the-file {
+	text-decoration: underline;
+}
+
+.form-upload .delete-current-file,
+.form-upload .delete-current-file:hover {
+	color: #6e6e6e;
+	text-decoration: underline;
+	opacity: 0.5;
+}
+
+/*-------------------------------------- select new file section*/
+.form-upload .select-new-file {
+	margin-bottom: 40px;
+}
+
+.form-upload .select-new-file .input-group {
+	position: relative;
+	width: 302px;
+	max-width: 100%;
+}
+
+.form-upload .select-new-file .form-control {
+	width: 100%;
+}
+
+.form-upload .select-new-file .browse-file,
+.form-upload .form-footer .form-upload-save {
+	position: relative;
+	left: -2px;
+	height: 40px;
+	margin: 0 !important;
+	padding: 0 25px;
+	background-color: #95c6d9;
+	border-radius: 4px !important;
+	color: #fff;
+	font-family: 'museo_cyrl500';
+	font-size: 14px;
+	z-index: 2;
+}
+
+.form-upload .select-new-file .input-group.has-error .form-control,
+.form-upload .select-new-file .input-group.has-error .form-control:focus {
+	border-color: #c66161;
+	box-shadow: none;
+}
+
+.form-upload .select-new-file .message-error {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: -10px;
+}
+
+.form-upload .select-new-file .input-group.has-error .message-error {
+	display: block;
+}
+
+/*-------------------------------------- document name section*/
+.form-upload .doc-name .form-control {
+	width: 300px !important;
+	max-width: 100%;
+}
+
+/*-------------------------------------- form footer section*/
+.form-upload .form-footer {
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+
+.form-upload .form-footer .footer-note {
+	position: relative;
+	width: 150px;
+	opacity: 0.5;
+	padding-left: 1em;
+	line-height: 1;
+}
+
+.form-upload .form-footer .footer-note:before {
+	content: '*';
+	position: absolute;
+	left: 0;
+}
+
+.form-upload .form-footer .form-upload-save {
+	margin-right: 40px !important;
+	border: 0;
+}
+
+
+/*
+========== FORM DOWNLOAD PAGE ==========
+*/
+.form-download-header {
+	margin: 20px 0 40px;
+	padding: 0 50px;
+}
+
+.form-download-header > span {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.form-download-detail {
+	margin-bottom: 50px;
+	padding: 0 50px;
+}
+
+.form-download-detail .list-group {
+	width: 300px;
+	max-width: 100%;
+}
+
+.form-download-detail .list-group > li:nth-child(odd) {
+	background: #f6f6f6;
+}
+
+.form-download-detail .list-group-item:first-child,
+.form-download-detail .list-group-item:last-child {
+	border-radius: 0;
+}
+
+.form-download-detail .list-group a {
+	color: #727272;
+}
+
+
+/*
+========== ERROR 404 PAGE ==========
+*/
+.content.error-404 {
+	background: transparent;
+	color: #a1a1a1;
+}
+
+.error-404-wrap {
+	width: 400px;
+	max-width: 100%;
+	margin: 80px auto 120px;
+	background: rgba(255, 255, 255, 0.75);
+	padding: 30px;
+	text-align: center;
+}
+
+.error-404-code {
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.error-404-code > span {
+	display: block;
+	margin-bottom: -40px;
+	font-size: 90px;
+	letter-spacing: 0;
+}
+
+.error-404-desc {
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.error-404-message {
+	width: 70%;
+	margin: 0 auto 30px;
+	font-size: 12px;
+}
+
+.error-404-home {
+	font-size: 12px;
+}
+
+.error-404-home > a {
+	text-decoration: underline;
+	color: #0072bc;
+}
+
+
+/*
+========== LANDING PAGE ==========
+*/
+.content.facilities-booking {
+	margin-bottom: -20px;
+	padding: 20px 35px;
+	overflow: hidden;
+}
+
+.facility-wrap {
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.facility-info {
+	position: relative;
+}
+
+.facility-img {
+	width: 60%;
+	margin-right: 2%;
+}
+
+.facility-time {
+	/*float: right;
+	height: 100%;*/
+	width: 36%;
+	position: absolute;
+	top: 0;
+	right: 2%;
+}
+
+.facility-time > span {
+	display: block;
+}
+
+.facility-cta,
+.facility-no-cta {
+	display: block;
+	width: 36%;
+	position: absolute;
+	bottom: 0;
+	right: 2%;
+	background-color: #95c6d9;
+	border-radius: 4px;
+	color: #fff;
+	font-family: 'museo_cyrl500';
+	font-size: 14px;
+	text-align: center;
+	white-space: normal;
+	padding: 0;
+}
+
+.facility-cta:hover {
+	color: #fff;
+}
+
+.facility-no-cta {
+	background-color: transparent;
+	padding: 0;
+	color: #c2c2c2;
+	text-align: left;
+}
+
+.facility-name {
+	display: block;
+	font-weight: bold;
+	min-height: 40px;
+	margin-bottom: -20px;
+}
+
+.facilities-contact {
+	background: url(../img/bg_pattern.png);
+	position: relative;
+	left: 0;
+	padding: 20px;
+	padding-bottom: 70px;
+	margin-bottom: -40px;
+	line-height: 16px;
+	font-size: 15px;
+}
+
+.facilities-contact:before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	background: url(../img/bg_pattern.png);
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+@media all and (max-width: 991px) {
+	.facilities-contact {
+		margin-left: -20px;
+	}
+}
+
+@media all and (max-width: 767px) { /* mobile screen fixes */
+	.content.facilities-booking {
+		overflow: visible;
+	}
+
+	.facility-wrap {
+		margin-bottom: 30px;
+	}
+	
+	.facility-img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.facility-time {
+		display: block;
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.facility-cta,
+	.facility-no-cta	{
+		position: static;
+		width: 100%;
+	}
+	
+	.facility-time > span {
+		display: inline;
+	}
+	
+	.facility-name {
+		min-height: 0;
+		margin-bottom: 20px;
+	}
+	
+	.facilities-contact {
+		position: static;
+		margin: 20px -20px -20px;
+	}
+	
+	.facilities-contact:before {
+		display: none;
+	}
+}
+
+
+/*
+========== LANDING VIVA ==========
+*/
+body.landing-viva {
+	background: #fff;
+}
+
+.landing-viva .navbar.navbar-top {
+	position: relative;
+	height: 65px;
+	background: #fff;
+	padding: 0 30px;
+	border-radius: 0;
+	border: 0;
+}
+
+.landing-viva .navbar-header {
+	margin-right: 60px;
+}
+
+.landing-viva .navbar-header .brand-logo > img {
+	margin-top: 8.5px;
+}
+
+.landing-viva .navbar-nav > li {
+	padding: 0 25px;
+}
+
+.landing-viva .navbar-nav > li > a {
+	height: 65px;
+	padding: 0;
+	border-bottom: 2px solid transparent;
+	line-height: 65px;
+	font-size: 18px;
+	color: #000;
+}
+
+.landing-viva .navbar-nav > li > a:hover,
+.landing-viva .navbar-nav > li > a:focus {
+	background: transparent;
+	border-color: #999;
+}
+
+.viva-resident-login {
+	height: 65px;
+	margin-right: 0;
+	line-height: 65px;
+}
+
+.viva-resident-login > a {
+	color: #737373;
+	font-size: 15px;
+}
+
+.viva-resident-login > a:hover {
+	text-decoration: none;
+}
+
+.landing-viva .content {
+	margin: 0;
+}
+
+.viva-main-carousel {
+	width: auto;
+	position: relative;
+}
+
+.viva-main-carousel .carousel .carousel-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.viva-main-carousel .carousel .item {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.viva-main-carousel .carousel .item img {
+	display: inline-block;
+	width: 100%;
+}
+
+@font-face {
+	font-family: 'Kozuka Mincho Pro';
+	src: url(fonts/kozminpro-regular.otf);
+}
+
+.viva-main-carousel .carousel .carousel-caption {
+	width: 45%;
+	position: absolute;
+	left: auto;
+	right: 15px;
+	bottom: 15px;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 40px 30px; 
+	font-size: 24px;
+	font-family: 'Kozuka Mincho Pro', sans-serif;
+	text-shadow: none;
+}
+
+.viva-main-carousel .carousel .carousel-indicators {
+	width: auto;
+	left: 60px;
+	bottom: 40px;
+	margin: 0;
+}
+
+.viva-main-carousel .carousel .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+	margin-right: 5px;
+    background-color: #95c6d9;
+    border: 0;
+    border-radius: 50%;
+}
+
+.viva-main-carousel .carousel .carousel-indicators .active {
+	width: 20px;
+    height: 20px;
+	margin-right: 5px;
+	background: #fff;
+}
+
+.viva-main-carousel .carousel .carousel-control,
+.viva-sub-carousel .carousel-control {
+    position: absolute;
+    top: 50%;
+	bottom: auto;
+    left: 15px;
+    width: auto;
+	height: auto;
+	margin-top: -10px;
+	background: transparent;
+	opacity: 1;
+	text-shadow: none;
+	color: #c0c0c0;
+}
+
+.viva-main-carousel .carousel .carousel-control.right,
+.viva-sub-carousel .carousel-control.right {
+	left: auto;
+	right: 15px;
+}
+
+.viva-sub-carousel {
+	position: relative;
+	margin: 60px 0;
+}
+
+.viva-sub-carousel .slide-content-wrap {
+	padding: 0 10px;
+}
+
+.viva-sub-carousel .slide-content-wrap img {
+	display: block;
+	width: 100%;
+}
+
+.viva-sub-carousel .slide-content-wrap span {
+	display: block;
+	height: 20px;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Kozuka Mincho Pro', sans-serif;
+	text-align: center;
+}
+
+.viva-sub-carousel .carousel-control {
+	margin-top: -30px;
+	left: 25px;
+}
+
+.viva-sub-carousel .carousel-control.right {
+	right: 25px;
+}
+
+.viva-contact {
+	background: url(../img/bg_pattern_lighter.png);
+	padding: 40px 120px;
+}
+
+.viva-contact .contact-heading {
+	text-align: center;
+	color: #95c6d9;
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.viva-contact-detail {
+	padding-left: 10%;
+	font-size: 15px;
+}
+
+@media all and (max-width: 991px) {
+	.viva-contact-detail {
+		padding-left: 15px;
+	}
+	
+	.viva-contact .viva-map-wrap {
+		margin-top: 20px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.landing-viva .navbar.navbar-top {
+		height: auto;
+		min-height: 65px;
+	}
+	
+	.landing-viva .navbar-header {
+		margin: 0;
+	}
+	
+	.landing-viva .navbar-header .brand-logo {
+		display: inline-block;
+	}
+	
+	.landing-viva .navbar-header .navbar-toggle {
+		margin-right: 0;
+		margin-top: 15px;
+	}
+	
+	.landing-viva .navbar-nav {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	
+	.landing-viva .navbar-nav > li {
+		text-align: center;
+	}
+	
+	.viva-resident-login {
+		float: none !important;
+		height: auto;
+		text-align: center;
+	}
+	
+	.landing-viva .navbar-collapse {
+		position: static;
+		z-index: 99;
+		background: #fff;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.viva-contact {
+		padding: 40px 0;
+	}
+	
+	.viva-main-carousel .carousel .carousel-caption {
+		display: none;
+	}
+	
+	.viva-main-carousel .carousel .carousel-indicators {
+		bottom: 20px;
+	}
+}
+
+
+/*
+========== CALENDAR ==========
+*/
+.fc {
+	direction: ltr;
+	text-align: left;
+	}
+	
+.fc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+html .fc,
+.fc table {
+	font-size: 24px;
+	}
+	
+.fc td,
+.fc th {
+	padding: 5px;
+	vertical-align: top;
+	}
+
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+	white-space: nowrap;
+	}
+
+.fc-header-left {
+	width: 25%;
+	text-align: left;
+	}
+	
+.fc-header-center {
+	text-align: center;
+	}
+	
+.fc-header-right {
+	width: 25%;
+	text-align: right;
+	}
+	
+.fc-header-title {
+	display: inline-block;
+	vertical-align: top;
+	}
+	
+.fc-header-title h2 {
+	margin-top: 0;
+	white-space: nowrap;
+	}
+	
+.fc .fc-header-space {
+	padding-left: 10px;
+	}
+	
+.fc-header .fc-button {
+	margin-bottom: 1em;
+	vertical-align: top;
+	}
+	
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+	margin-right: -1px;
+	}
+	
+.fc-header .fc-corner-right,  /* non-theme */
+.fc-header .ui-corner-right { /* theme */
+	margin-right: 0; /* back to normal */
+	}
+	
+/* button layering (for border precedence) */
+	
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+	z-index: 2;
+	}
+	
+.fc-header .fc-state-down {
+	z-index: 3;
+	}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+	z-index: 4;
+	}
+	
+	
+	
+/* Content
+------------------------------------------------------------------------*/
+	
+.fc-content {
+	clear: both;
+	zoom: 1; /* for IE7, gives accurate coordinates for [un]freezeContentHeight */
+	}
+	
+.fc-view {
+	width: 100%;
+	overflow: hidden;
+	}
+	
+	
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,    /* <th>, usually */
+.fc-widget-content {  /* <td>, usually */
+	border: 1px solid #ddd;
+	}
+	
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	background: #fcfcfc;
+	}
+	
+.fc-cell-overlay { /* semi-transparent rectangle while dragging */
+	background: #bcccbc;
+	opacity: .3;
+	filter: alpha(opacity=30); /* for IE */
+	}
+	
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+	position: relative;
+	display: inline-block;
+	padding: 0 .6em;
+	overflow: hidden;
+	height: 1.9em;
+	line-height: 1.9em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+
+.fc-text-arrow {
+	margin: 0 .1em;
+	font-size: 2em;
+	font-family: "Courier New", Courier, monospace;
+	vertical-align: baseline; /* for IE7 */
+	}
+
+
+	
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+
+.fc-state-default {
+	background-color: #f5f5f5;
+	}
+
+.fc-state-hover,
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled {
+	color: #333333;
+	background-color: #e6e6e6;
+	}
+
+.fc-state-hover {
+	color: #333333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	   -moz-transition: background-position 0.1s linear;
+	     -o-transition: background-position 0.1s linear;
+	        transition: background-position 0.1s linear;
+	}
+
+.fc-state-down,
+.fc-state-active {
+	background-color: #cccccc;
+	background-image: none;
+	outline: 0;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+.fc-state-disabled {
+	cursor: default;
+	background-image: none;
+	opacity: 0.55;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+	}
+
+	
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+
+.fc-event-container > * {
+	z-index: 8;
+	}
+
+.fc-event-container > .ui-draggable-dragging,
+.fc-event-container > .ui-resizable-resizing {
+	z-index: 9;
+	}
+	 
+.fc-event {
+	border: 1px solid #dfeef4; /* default BORDER color */
+	background-color: #dfeef4; /* default BACKGROUND color */
+	color: #95c6d9;               /* default TEXT color */
+	font-size: .85em;
+	cursor: default;
+	border-radius: 5px;
+	}
+
+a.fc-event {
+	text-decoration: none;
+	}
+	
+a.fc-event,
+.fc-event-draggable {
+	cursor: pointer;
+	}
+	
+.fc-rtl .fc-event {
+	text-align: right;
+	}
+
+.fc-event-inner {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	}
+	
+.fc-event-time,
+.fc-event-title {
+	padding: 0 1px;
+	}
+	
+.fc .ui-resizable-handle {
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	overflow: hidden; /* hacky spaces (IE6/7) */
+	font-size: 300%;  /* */
+	line-height: 50%; /* */
+	}
+	
+	
+	
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+	border-width: 1px 0;
+	margin-bottom: 1px;
+	}
+
+.fc-ltr .fc-event-hori.fc-event-start,
+.fc-rtl .fc-event-hori.fc-event-end {
+	border-left-width: 1px;
+	}
+
+.fc-ltr .fc-event-hori.fc-event-end,
+.fc-rtl .fc-event-hori.fc-event-start {
+	border-right-width: 1px;
+	}
+	
+/* resizable */
+	
+.fc-event-hori .ui-resizable-e {
+	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px      !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: e-resize;
+	}
+	
+.fc-event-hori .ui-resizable-w {
+	top: 0           !important;
+	left: -3px       !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: w-resize;
+	}
+	
+.fc-event-hori .ui-resizable-handle {
+	_padding-bottom: 14px; /* IE6 had 0 height */
+	}
+	
+
+table.fc-border-separate {
+	border-collapse: separate;
+	}
+	
+.fc-border-separate th,
+.fc-border-separate td {
+	border-width: 3px 0 0 3px;
+	border-color: #eaebec;
+	}
+	
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+	border-right-width: 1px;
+	}
+	
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+	border-bottom-width: 1px;
+	}
+	
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+	border-top-width: 0;
+	}
+	
+	
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+	text-align: center;
+	font-size: 14px;
+	background-color: #eaebec;
+	color: #424242;
+	font-weight: normal;
+	}
+
+.fc .fc-week-number {
+	width: 22px;
+	text-align: center;
+	}
+
+.fc .fc-week-number div {
+	padding: 0 2px;
+	}
+	
+.fc-grid .fc-day-number {
+	float: left;
+	padding: 0 2px;
+	}
+.fc-grid .fc-other-month {
+	background-color: #f4f4f4;
+}	
+.fc-grid .fc-other-month .fc-day-number {
+	opacity: 0;
+	filter: alpha(opacity=0); /* for IE */
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+	}
+	
+.fc-grid .fc-day-content {
+	clear: both;
+	padding: 2px 2px 1px; /* distance between events and day edges */
+	}
+	
+/* event styles */
+	
+.fc-grid .fc-event-time {
+	font-weight: bold;
+	}
+	
+/* right-to-left */
+	
+.fc-rtl .fc-grid .fc-day-number {
+	float: left;
+	}
+	
+.fc-rtl .fc-grid .fc-event-time {
+	float: right;
+	}
+	
+/* CUSTOM STYLING */
+
+.fc-day:hover {
+	background: #95c6d9;
+	color: #fff;
+}
+
+.btm-text {
+	background: transparent;
+	color: #95c6d9;
+	border: none;
+}
+
+.fc-day:hover .btm-text {
+	color: #fff;
+}
+
+
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+	border-collapse: separate;
+	}
+	
+.fc-agenda-days th {
+	text-align: center;
+	}
+	
+.fc-agenda .fc-agenda-axis {
+	width: 50px;
+	padding: 0 4px;
+	vertical-align: middle;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+	}
+
+.fc-agenda .fc-week-number {
+	font-weight: bold;
+	}
+	
+.fc-agenda .fc-day-content {
+	padding: 2px 2px 1px;
+	}
+	
+/* make axis border take precedence */
+	
+.fc-agenda-days .fc-agenda-axis {
+	border-right-width: 1px;
+	}
+	
+.fc-agenda-days .fc-col0 {
+	border-left-width: 0;
+	}
+	
+/* all-day area */
+	
+.fc-agenda-allday th {
+	border-width: 0 1px;
+	}
+	
+.fc-agenda-allday .fc-day-content {
+	min-height: 34px; /* TODO: doesnt work well in quirksmode */
+	_height: 34px;
+	}
+	
+/* divider (between all-day and slots) */
+	
+.fc-agenda-divider-inner {
+	height: 2px;
+	overflow: hidden;
+	}
+	
+.fc-widget-header .fc-agenda-divider-inner {
+	background: #eee;
+	}
+	
+/* slot rows */
+	
+.fc-agenda-slots th {
+	border-width: 1px 1px 0;
+	}
+	
+.fc-agenda-slots td {
+	border-width: 1px 0 0;
+	background: none;
+	}
+	
+.fc-agenda-slots td div {
+	height: 20px;
+	}
+	
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+	border-top-width: 0;
+	}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+	border-top-style: dotted;
+	}
+	
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+	*border-top-style: solid; /* doesn't work with background in IE6/7 */
+	}
+	
+
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+	border-width: 0 1px;
+	}
+
+.fc-event-vert.fc-event-start {
+	border-top-width: 1px;
+	}
+
+.fc-event-vert.fc-event-end {
+	border-bottom-width: 1px;
+	}
+	
+.fc-event-vert .fc-event-time {
+	white-space: nowrap;
+	font-size: 10px;
+	}
+
+.fc-event-vert .fc-event-inner {
+	position: relative;
+	z-index: 2;
+	}
+	
+.fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: .25;
+	filter: alpha(opacity=25);
+	}
+	
+.fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+	display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+	}
+	
+/* resizable */
+	
+.fc-event-vert .ui-resizable-s {
+	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%      !important;
+	height: 8px      !important;
+	overflow: hidden !important;
+	line-height: 8px !important;
+	font-size: 11px  !important;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+	}
+	
+#calendar {
+	padding: 0 40px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.fc-button {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: none;
+	position: relative;
+}
+
+.fc-button.fc-state-hover {
+	background: #f5f5f5;
+}
+
+.fc-text-arrow {
+	display: none;
+}
+
+.fc-button.fc-button-prev:before,
+.fc-button.fc-button-next:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -8px;
+	margin-left: -6px;
+	width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent; 
+	
+	border-right: 8px solid #aaa;
+}
+
+.fc-button.fc-button-next:before {
+	border-right: 0;
+	border-left: 8px solid #aaa;
+	margin-left: -2px;
+}
+
+.fc-button.fc-button-prev:hover:before {
+	border-right-color: #95c6d9;
+}
+
+.fc-button.fc-button-next:hover:before {
+	border-left-color: #95c6d9;
+}
+
+.fc .fc-header-space {
+	padding-left: 20px;
+}
+
+.fc-header-title {
+	height: 36px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 20px;
+	padding-right: 54px;
+	background: url('../img/icon-calendar.png') no-repeat right;
+}
+
+.fc-header-title > h2 {
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	margin: 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+.fc-view {
+	border-radius: 4px;
+}
+
+.fc-day .fc-day-number {
+	color: #ccc;
+}
+
+.fc-event {
+	font-size: 16px;
+	background: none;
+	border: 0;
+	color: #bababa;
+	cursor: default;
+}
+
+.fc-event-inner {
+	position: relative;
+	overflow: visible;
+	text-align: center;
+}
+
+.fc-event.fc-event-available {
+	cursor: pointer;
+	color: #95c6d9;
+}
+
+.fc-event.fc-event-available .fc-event-inner:before {
+	content: 'Book Now';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	background: #afe0f3;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+}
+
+.fc-event.fc-event-available:hover .fc-event-inner .fc-event-title {
+	position: relative;
+	top: 25px;
+}
+
+.fc-event.fc-event-available:hover .fc-event-inner:before {
+	opacity: 1;
+}
+
+.fc-day:hover {
+	background: #fff;
+}
+
+.fc-day.fc-other-month:hover {
+	background: #f4f4f4;
+}
+
+.fc-bgevent {
+	background: red;
+}
+
+.facility-select-box {
+	position: absolute;
+	top: 5px;
+	left: 400px;
+	font-size: 14px;
+	max-width: 100%;
+	z-index: 999;
+	width: auto !important;
+}
+
+.facility-select-box .sod_select {
+	height: 36px;
+	line-height: 36px;
+}
+
+.facility-select-box .sod_select:before {
+	right: 0;
+}
+
+.facility-select-box label {
+	height: 36px;
+	line-height: 36px;
+	vertical-align: top;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.itemsperpage-select-box {
+	position: relative;
+	top: 5px;
+	left: 50px;
+	font-size: 14px;
+	max-width: 100%;
+	z-index: 999;
+	width: auto !important;
+}
+
+.itemsperpage-select-box .sod_select {
+	height: 36px;
+	line-height: 36px;
+	width: 80px;
+}
+
+.itemsperpage-select-box .sod_select:before {
+	right: 0;
+}
+
+.itemsperpage-select-box label {
+	height: 36px;
+	line-height: 36px;
+	vertical-align: top;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+
+/*
+========== DROPDOWN ==========
+*/
+
+.select-div {
+	display: block;
+	width: 100%;
+}
+
+.sod_select {
+	max-width: 100%;
+	border: #ccc 1px solid;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin:0px;
+	padding:0 10px;
+	height: 38px;
+	line-height: 38px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-transform: none;
+}
+
+.aros a i {
+	color: #999;
+	padding: 5px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.aros a:hover i {
+ color: #95c6d9;
+ background: #999;
+}
+
+.compulsory {
+	font-size: 11px;
+	color: #999;
+	font-weight: normal;
+}
+
+.correctly {
+	color: #c66161;
+	margin-left: 10px;
+}
+
+.hypme {
+	padding-top: 10px;
+}
+
+.sod_select:hover,
+.sod_select:focus,
+.sod_select.focus {
+	border-color: #ccc;
+	box-shadow: none;
+}
+
+.sod_select .sod_list_wrapper {
+	border: #95c6d9 1px solid;
+	border-radius: 5px;
+	left: 2px;
+	overflow-y: auto;
+	width: 100%;
+	max-height: 250px;
+}
+
+.sod_select:after {
+	display: none;
+}
+
+.sod_select:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 34px;
+	background: url('../img/dropdown.png') no-repeat 50% 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.sod_select:hover:before {
+	background: url('../img/dropdown-hover.png') no-repeat 50% 50%;
+}
+
+.sod_select .sod_option {
+	padding: 0 10px;
+}
+
+.sod_select .sod_option.selected:before {
+	display: none;
+}
+
+.sod_select.above .sod_list_wrapper {
+    border-top: 1px solid #95c6d9;
+    border-bottom: medium none;
+}
+
+.fa-sort {
+	margin-left: 10px;
+}
+
+
+/*
+========== DATEPICKER ==========
+*/
+.datetimepicker {
+	border-color: #95c6d9;
+	padding: 20px;
+}
+
+.datetimepicker.dropdown-menu {
+	box-shadow: 6px 6px 0 rgba(0, 0, 0, .175);
+}
+
+[class*=" datetimepicker-dropdown"]:before {
+	border-bottom-color: #95c6d9;
+}
+
+.datetimepicker th.prev,
+.datetimepicker th.next,
+.datetimepicker th.switch,
+.datetimepicker th.dow {
+	color: #767676 !important;
+}
+
+.datetimepicker th.prev:hover > i,
+.datetimepicker th.next:hover > i {
+	color: #95c6d9;
+}
+
+.datetimepicker th.switch:hover {
+	background: none !important;
+}
+
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active,
+.datetimepicker table tr td span.active:active, 
+.datetimepicker table tr td span.active:hover:active, 
+.datetimepicker table tr td span.active.disabled:active, 
+.datetimepicker table tr td span.active.disabled:hover:active, 
+.datetimepicker table tr td span.active.active, 
+.datetimepicker table tr td span.active:hover.active, 
+.datetimepicker table tr td span.active.disabled.active, 
+.datetimepicker table tr td span.active.disabled:hover.active {
+	background: none !important;
+	color: #95c6d9;
+}
+.scrolable {
+    overflow: auto;
+    max-width: 800px;
+    max-height: 400px;
+    margin-right: 60px;
+}
+.radio {
+	position: relative;	
+	left: 20px;
+}
+.change-pass {
+	position: relative;
+	padding-left: 0px;
+}
+
+.first-li {
+	padding-right: 60px !important;
+}
+
+th, td { white-space: nowrap; }
+div.dataTables_wrapper {
+        margin: 0 auto;
+        position: relative;
+}
+
+div.container {
+     width: 80%;
+}
+.delete-modal{
+	top: 200px;
+}
+.delete-modal .modal-body {
+	padding: 70px;
+}
+/* search css */
+.dataTables_filter {
+   float: left;
+   width:240px;
+   border: 1px solid #b7b7b7;
+   border-radius: 5px;
+   margin-left: 0;
+   height: 40px;
+   margin-bottom: 15px;
+   margin-top: -47px;
+   margin-left: 230px;
+}
+
+div.dataTables_length {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-left: 510px;
+    margin-top: -45px;
+}
+
+.dataTables_length label select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    padding: 5px;
+}
+
+.dataTables_length label {
+    font-size: 14px;
+    font-family: Oxygen, arial;
+    font-weight: 500;
+    float: left;
+    display: block;
+    line-height: 40px;
+}
+
+.dataTables_filter label input[type="search"] {
+    height: 33px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    width: 190px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    margin-top: 4px;
+    margin-left: 3px;
+    font-weight: 500;
+    font-family: Oxygen, arial;
+}
+.dataTables_filter label input[type="search"]:focus { outline:none;}
+
+/* Pagination css */
+.paging_simple_numbers {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.paging_simple_numbers a
+{
+        border: 0;
+        color: #6e6e6e !important;
+        background: transparent;
+        cursor:pointer;
+        font-size: 12px;
+        font-family: Oxygen, arial;
+        padding: 0 5px;
+}
+.paging_simple_numbers a.current{
+    color: #95c6d9 !important;
+}
+
+#users_table_length span.sod_select {
+    width: 90px;
+    margin: 0 10px;
+    line-height: 30px;
+    padding-top: 5px;
+    float: right;
+}
+.navbar-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.guard-table .dataTables_wrapper{
+	margin-top:60px;
+	
+}

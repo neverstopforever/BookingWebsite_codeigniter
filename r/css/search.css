@@ -1,0 +1,50 @@
+.dataTables_filter {
+   float:left;
+   width:200px;
+   border: 1px solid #b7b7b7;
+   border-radius: 5px;
+   margin-left: 50px;
+   height: 40px;
+}
+
+div.dataTables_length {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.dataTables_length label select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    padding: 5px;
+}
+
+.dataTables_length label {
+    font-size: 14px;
+    font-family: Oxygen, arial;
+    font-weight: 500;
+}
+
+.dataTables_filter label input[type="search"] {
+    height: 33px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    width: 190px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    margin-top: 4px;
+    margin-left: 3px;
+    font-weight: 500;
+    font-family: Oxygen, arial;
+}
+.dataTables_filter label input[type="search"]:focus { outline:none;}
+
+
+
+
